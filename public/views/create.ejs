@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layout/start_head'); -%>
+        <title>Create New Post</title>
+<%- include('layout/end_head'); -%>
+<body>
+        <!-- Navigation-->
+        <%- include('layout/navbar'); -%>
+        <!-- Page Header-->
+        <header class="masthead" style="background-color: deepskyblue;)">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Create a New Blog Post</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="my-5">
+                            <form id="blog_submit_form" action="/posts/store" method="post">
+                                <div class="form-floating">
+                                    <input class="form-control" id="title" name="title" type="text" placeholder="Enter Title Here"/>
+                                    <label for="title">Title</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="body" name="body" placeholder="Blog text goes here..."></textarea>
+                                    <label for="body">Body</label>
+                                </div>
+                                <br />
+                                <button class="btn btn-primary text-uppercase" id="submitForm" type="submit">Save Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <%- include('layout/footer'); -%>
+        <!-- Scripts -->
+        <%- include('layout/scripts'); -%>
+    </body>
+</html>

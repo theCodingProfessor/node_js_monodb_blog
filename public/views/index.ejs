@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layout/start_head'); -%>
+        <title>My Node Blog</title>
+<%- include('layout/end_head'); -%>
+    <body>
+        <!-- Navigation-->
+        <%- include('layout/navbar'); -%>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('../assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>My Node.js Blog</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <% for (var x = 0; x < all_posts.length; x++) { %>
+                    <div class="post-preview">
+                            <h2 class="post-title">
+                            <%= all_posts[x].title %>
+                            </h2>
+                            <h3 class="post-subtitle">
+                            <%= all_posts[x].body %>
+                            </h3>
+                 </div>
+                        <br>
+                    <% } %>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <%- include('layout/footer'); -%>
+        <!-- Scripts -->
+        <%- include('layout/scripts'); -%>
+    </body>
+</html>
