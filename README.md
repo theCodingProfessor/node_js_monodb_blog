@@ -2,9 +2,9 @@
 
 This is a blog running Node.js, Express, MongoDB, Mongoose, EJS (Embedded JavaScript),
 Bootstrap (Start Bootstrap Blog Template), HTML and CSS, prepared as a demonstration 
-of how to use this stack for as a classroom (teaching) experience. 
+of how to use this stack in a classroom (teaching/learning) experience. 
 
-This code is entirely open-source (from this source) and is provided as is, allowing 
+This code is entirely open-source MIT Licence (from this source) and is provided as is, allowing 
 for attributions to others whose code inspired or helped direct this project. 
 
 Thank you to JetBrains for PHP Storm (IDE used for development). This project was done 
